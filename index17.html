@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VluchtelingenWerk Halderberge</title>
+    <style>
+        :root {
+            --primary: #1976d2;
+            --accent: #64b5f6;
+            --background: #f5f8fa;
+            --white: #fff;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: var(--background);
+            margin: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 12px var(--shadow);
+            border-bottom: 5px solid var(--accent);
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .buttons button {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .buttons button:hover {
+            background-color: var(--primary);
+        }
+
+        .village-info, .quiz-container {
+            background-color: var(--white);
+            padding: 30px;
+            margin: 20px 0;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        h2, h3 {
+            color: var(--primary);
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .quiz-container {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .quiz-container button {
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #result {
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .answer-button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .answer-button:hover {
+            background-color: var(--primary);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Welkom bij VluchtelingenWerk Halderberge</h1>
+</header>
+
+<div class="content">
+    <div class="buttons">
+        <button onclick="window.location.href='#Oudenbosch'">Oudenbosch</button>
+        <button onclick="window.location.href='#Hoeven'">Hoeven</button>
+        <button onclick="window.location.href='#OudGastel'">Oud Gastel</button>
+        <button onclick="window.location.href='#Bosschenhoofd'">Bosschenhoofd</button>
+        <button onclick="window.location.href='#Stampersgat'">Stampersgat</button>
+    </div>
+
+    <!-- Oudenbosch -->
+    <div class="village-info" id="Oudenbosch">
+        <h2>Oudenbosch</h2>
+        <p>Oudenbosch is een charmant dorp in de gemeente Halderberge, beroemd om zijn rijke geschiedenis en de indrukwekkende Basiliek van de Heilige Agatha en Barbara. Dit dorp heeft een unieke mix van cultuur, natuur en moderne voorzieningen, waardoor het een aantrekkelijke plek is voor zowel inwoners als bezoekers.</p>
+
+        <h3>Basiliek van de Heilige Agatha en Barbara</h3>
+        <p>De Basiliek is een architectonisch meesterwerk met een grote koepel en prachtige details. Het is niet alleen een religieuze plek, maar ook een toeristische trekpleister die jaarlijks duizenden bezoekers trekt. De basiliek is een symbool van de lokale gemeenschap en speelt een belangrijke rol in de culturele identiteit van Oudenbosch.</p>
+        <img src="https://live.staticflickr.com/65535/50706873233_05b5f34fa3_b.jpg" alt="Basiliek van Oudenbosch">
+
+        <h3>Zouavenmuseum</h3>
+        <p>Dit museum vertelt het fascinerende verhaal van de Zouaven, soldaten uit Oudenbosch die in de 19e eeuw naar Rome trokken om de paus te helpen. Het museum biedt een kijkje in de geschiedenis en de impact van deze soldaten op de lokale gemeenschap.</p>
+
+        <h3>Supermarkten</h3>
+        <p>Oudenbosch heeft een verscheidenheid aan supermarkten, waaronder Dirk, Lidl, Aldi en Albert Heijn. De Poolse supermarkt naast de Albert Heijn biedt een unieke selectie van producten die populair zijn bij de lokale bevolking.</p>
+
+        <h3>Huizen en appartementen</h3>
+        <p>Er zijn diverse woonmogelijkheden beschikbaar, van rijtjeshuizen tot vrijstaande woningen en appartementen. Dit maakt Oudenbosch een aantrekkelijke plek voor nieuwkomers die op zoek zijn naar een huis.</p>
+
+        <h3>Vervoer</h3>
+        <p>Het dorp is goed bereikbaar met zowel de trein als de bus, met verbindingen naar steden zoals Roosendaal, Breda en Rotterdam. Betalen kan eenvoudig met een pinpas of OV-chipkaart, wat het reizen vergemakkelijkt.</p>
+
+        <h3>Evenementen</h3>
+        <p>Oudenbosch organiseert jaarlijks verschillende evenementen, zoals de kermis en culturele festivals die de lokale tradities vieren. Deze evenementen brengen de gemeenschap samen en bieden een kans voor bezoekers om de lokale cultuur te ervaren.</p>
+
+        <h3>Natuur</h3>
+        <p>In de omgeving zijn er mooie natuurgebieden en parken waar je kunt wandelen en fietsen. Dit maakt Oudenbosch niet alleen een cultureel centrum, maar ook een plek voor natuurliefhebbers.</p>
+
+        <button onclick="startQuiz('oudenbosch')">Start de quiz over Oudenbosch!</button>
+        <div class="quiz-container" id="quiz-oudenbosch">
+            <h2 id="quiz-title-oudenbosch"></h2>
+            <p id="question-oudenbosch"></p>
+            <div id="answers-oudenbosch"></div>
+            <p id="result-oudenbosch"></p>
+        </div>
+    </div>
+
+    <!-- Hoeven -->
+    <div class="village-info" id="Hoeven">
+        <h2>Hoeven</h2>
+
+        <h3>Waterpark</h3>
+        <p>Bosbad Hoeven is een populair waterpark met veel glijbanen en zwembaden, geschikt voor jong en oud. Het is een geweldige plek voor gezinnen om een dag vol plezier door te brengen.</p>
+        <img src="https://www.5sterrencampingsnederland.nl/wp-content/uploads/2020/10/molecaten-park-bosbad-hoeven-23.jpg" alt="Waterpark Hoeven">
+
+        <h3>Kerk</h3>
+        <p>De St. Jan de Doper kerk is een prachtig historisch gebouw dat door de jaren heen meerdere keren is verbouwd. Het is een belangrijk cultureel erfgoed voor de inwoners van Hoeven.</p>
+
+        <h3>Supermarkt</h3>
+        <p>De Albert Heijn is de grootste supermarkt in Hoeven en biedt een breed scala aan producten, van verse groenten tot lokale delicatessen.</p>
+
+        <h3>Basisschool</h3>
+        <p>Basisschool Uniek heeft een grasveld, speeltoestellen en een grote gymzaal. De school organiseert regelmatig activiteiten en evenementen die de betrokkenheid van de gemeenschap bevorderen.</p>
+
+        <h3>Voetbalvereniging</h3>
+        <p>VV Hoeven heeft drie velden en een gezellige kantine. De vereniging organiseert toernooien en evenementen, wat bijdraagt aan de sociale cohesie in het dorp.</p>
+
+        <h3>Evenementen</h3>
+        <p>Hoeven organiseert jaarlijks een aantal evenementen, waaronder een dorpsfeest en sporttoernooien, die de lokale gemeenschap samenbrengen.</p>
+
+        <h3>Natuur</h3>
+        <p>De omgeving van Hoeven biedt prachtige natuurgebieden en wandelpaden, ideaal voor natuurliefhebbers. Er zijn verschillende routes die door schilderachtige landschappen leiden.</p>
+
+        <button onclick="startQuiz('hoeven')">Start de quiz over Hoeven!</button>
+        <div class="quiz-container" id="quiz-hoeven">
+            <h2 id="quiz-title-hoeven"></h2>
+            <p id="question-hoeven"></p>
+            <div id="answers-hoeven"></div>
+            <p id="result-hoeven"></p>
+        </div>
+    </div>
+
+    <!-- Oud Gastel -->
+    <div class="village-info" id="OudGastel">
+        <h2>Oud Gastel</h2>
+
+        <h3>De Kapel</h3>
+        <p>Oud Gastel staat bekend om zijn historische kapel, een belangrijke plek voor de lokale gemeenschap. De kapel is een symbool van de religieuze tradities die in het dorp zijn geworteld.</p>
+
+        <h3>Evenementen</h3>
+        <p>Er worden regelmatig dorpsfeesten gehouden, waaronder de grote carnaval en de zomermarkt. Deze evenementen zijn een kans voor de inwoners om samen te komen en te genieten van lokale tradities.</p>
+
+        <h3>Wandelroutes</h3>
+        <p>Oud Gastel heeft diverse wandelroutes langs de rivier de Mark, ideaal voor natuurliefhebbers. De routes bieden prachtige uitzichten en zijn perfect voor een ontspannen wandeling.</p>
+
+        <h3>Winkels</h3>
+        <p>Er zijn verschillende lokale winkels en een supermarkt voor dagelijkse benodigdheden. De lokale ondernemers spelen een belangrijke rol in de gemeenschap.</p>
+
+        <h3>Natuur</h3>
+        <p>Oud Gastel is omringd door prachtige natuur, met diverse parken en groene gebieden die perfect zijn voor recreatie en ontspanning. Het dorp biedt een rustige omgeving voor gezinnen en natuurliefhebbers.</p>
+        
+        <h3>Cultuur</h3>
+        <p>De lokale gemeenschap organiseert regelmatig culturele evenementen, zoals kunstexposities en muziekfestivals, die de rijke geschiedenis van het dorp vieren. Dit draagt bij aan de culturele diversiteit van de regio.</p>
+
+        <button onclick="startQuiz('oudgastel')">Start de quiz over Oud Gastel!</button>
+        <div class="quiz-container" id="quiz-oudgastel">
+            <h2 id="quiz-title-oudgastel"></h2>
+            <p id="question-oudgastel"></p>
+            <div id="answers-oudgastel"></div>
+            <p id="result-oudgastel"></p>
+        </div>
+    </div>
+
+    <!-- Bosschenhoofd -->
+    <div class="village-info" id="Bosschenhoofd">
+        <h2>Bosschenhoofd</h2>
+
+        <h3>Vliegveld Seppe</h3>
+        <p>Dit vliegveld is populair bij luchtvaartliefhebbers en biedt ook een vliegschool. Het is een unieke plek waar mensen de kans krijgen om meer te leren over de luchtvaart.</p>
+
+        <h3>Pagnevaartbos</h3>
+        <p>Het Pagnevaartbos is een prachtig natuurgebied voor wandelen en fietsen, met verschillende paden door de natuur. Het bos is een ideale plek voor recreatie en biedt een ontsnapping aan de drukte van het dagelijks leven.</p>
+
+        <h3>Gemeenschap</h3>
+        <p>Bosschenhoofd is een klein dorp met een hechte gemeenschap en veel sociaal georganiseerde evenementen. De inwoners zijn actief betrokken bij het organiseren van activiteiten die de sociale cohesie bevorderen.</p>
+
+        <h3>Sportfaciliteiten</h3>
+        <p>Bovendien zijn er ook andere sportfaciliteiten, zoals tennisbanen en een sporthal, waar verschillende sportactiviteiten plaatsvinden. Dit biedt inwoners de mogelijkheid om actief te blijven en deel te nemen aan sportevenementen.</p>
+        
+        <h3>Eten en Drinken</h3>
+        <p>Bosschenhoofd heeft een aantal gezellige cafés en restaurants waar je kunt genieten van lokale gerechten en drankjes. Deze eetgelegenheden zijn populaire ontmoetingsplaatsen voor de inwoners.</p>
+
+        <button onclick="startQuiz('bosschenhoofd')">Start de quiz over Bosschenhoofd!</button>
+        <div class="quiz-container" id="quiz-bosschenhoofd">
+            <h2 id="quiz-title-bosschenhoofd"></h2>
+            <p id="question-bosschenhoofd"></p>
+            <div id="answers-bosschenhoofd"></div>
+            <p id="result-bosschenhoofd"></p>
+        </div>
+    </div>
+
+    <!-- Stampersgat -->
+    <div class="village-info" id="Stampersgat">
+        <h2>Stampersgat</h2>
+
+        <h3>Rivier de Mark</h3>
+        <p>De rivier de Mark slingert door Stampersgat en is perfect voor wandelingen langs het water. Het biedt een schilderachtige omgeving voor recreatie en ontspanning.</p>
+
+        <h3>Carnavalsoptocht</h3>
+        <p>De carnavalsoptocht in Stampersgat is een belangrijk jaarlijks evenement voor de lokale gemeenschap. Het is een kleurrijke en levendige viering die veel bezoekers trekt.</p>
+
+        <h3>Supermarkten</h3>
+        <p>Stampersgat heeft een supermarkt voor dagelijkse boodschappen en een aantal kleinere winkels. Deze winkels zijn essentieel voor de lokale economie en bieden gemak voor de inwoners.</p>
+
+        <h3>Natuurgebieden</h3>
+        <p>De omgeving van Stampersgat biedt verschillende natuurgebieden waar bezoekers kunnen wandelen, fietsen en vogels kijken. Dit maakt het een ideale plek voor natuurliefhebbers en gezinnen.</p>
+        
+        <h3>Gemeenschapsactiviteiten</h3>
+        <p>Bovendien worden er ook andere gemeenschapsactiviteiten georganiseerd, zoals rommelmarkten en seizoensgebonden festivals, die de lokale cultuur en tradities vieren. Deze evenementen versterken de band tussen de inwoners.</p>
+
+        <button onclick="startQuiz('stampersgat')">Start de quiz over Stampersgat!</button>
+        <div class="quiz-container" id="quiz-stampersgat">
+            <h2 id="quiz-title-stampersgat"></h2>
+            <p id="question-stampersgat"></p>
+            <div id="answers-stampersgat"></div>
+            <p id="result-stampersgat"></p>
+        </div>
+    </div>
+</div>
+
+<script>
+    const quizzes = {
+        oudenbosch: [
+            { question: "Welke kerk is het bekendst in Oudenbosch?", answers: shuffle([{ text: "De Basiliek van de Heilige Agatha en Barbara", correct: true }, { text: "De St. Jan", correct: false }]) },
+            { question: "Welke supermarkt heeft een Poolse afdeling in Oudenbosch?", answers: shuffle([{ text: "Albert Heijn", correct: true }, { text: "Lidl", correct: false }]) },
+            { question: "Waar kun je met de trein naartoe vanuit Oudenbosch?", answers: shuffle([{ text: "Roosendaal en Dordrecht", correct: true }, { text: "Tilburg en Eindhoven", correct: false }]) },
+            { question: "Wat is het Zouavenmuseum?", answers: shuffle([{ text: "Een museum over soldaten die de paus hielpen", correct: true }, { text: "Een speelgoedmuseum", correct: false }]) },
+            { question: "Hoe betaal je tegenwoordig in het openbaar vervoer?", answers: shuffle([{ text: "Met je pinpas of OV-chipkaart", correct: true }, { text: "Alleen met contant geld", correct: false }]) },
+            { question: "Wat is een belangrijk jaarlijks evenement in Oudenbosch?", answers: shuffle([{ text: "De kermis", correct: true }, { text: "De kerstmarkt", correct: false }]) },
+            { question: "Wat voor soort woningen zijn er beschikbaar in Oudenbosch?", answers: shuffle([{ text: "Rijtjeshuizen en appartementen", correct: true }, { text: "Enkel vrijstaande huizen", correct: false }]) }
+        ],
+        hoeven: [
+            { question: "Wat is Bosbad Hoeven?", answers: shuffle([{ text: "Een waterpark", correct: true }, { text: "Een museum", correct: false }]) },
+            { question: "Hoe heet de kerk in Hoeven?", answers: shuffle([{ text: "St. Jan de Doper", correct: true }, { text: "St. Pieter", correct: false }]) },
+            { question: "Wat is de grootste supermarkt in Hoeven?", answers: shuffle([{ text: "Albert Heijn", correct: true }, { text: "Jumbo", correct: false }]) },
+            { question: "Wat organiseert VV Hoeven?", answers: shuffle([{ text: "Voetbaltoernooien en evenementen", correct: true }, { text: "Alleen trainingen", correct: false }]) },
+            { question: "Wat voor voorzieningen heeft Basisschool Uniek?", answers: shuffle([{ text: "Grasveld, gymzaal en speeltoestellen", correct: true }, { text: "Alleen klaslokalen", correct: false }]) },
+            { question: "Wat voor evenementen worden er in Hoeven georganiseerd?", answers: shuffle([{ text: "Dorpsfeesten", correct: true }, { text: "Filmfestivals", correct: false }]) },
+            { question: "Wat is een populaire activiteit in Bosbad Hoeven?", answers: shuffle([{ text: "Zwemmen", correct: true }, { text: "Schaatsen", correct: false }]) }
+        ],
+        oudgastel: [
+            { question: "Wat is het belangrijkste historische gebouw in Oud Gastel?", answers: shuffle([{ text: "De Kapel", correct: true }, { text: "De Basiliek", correct: false }]) },
+            { question: "Wat kun je in Oud Gastel doen?", answers: shuffle([{ text: "Wandelen langs de rivier de Mark", correct: true }, { text: "Bier proeven", correct: false }]) },
+            { question: "Wat voor evenementen worden er in Oud Gastel gehouden?", answers: shuffle([{ text: "Carnaval en zomermarkt", correct: true }, { text: "Kunstexposities", correct: false }]) },
+            { question: "Wat is een populaire activiteit in Oud Gastel?", answers: shuffle([{ text: "Fietsen in de natuur", correct: true }, { text: "Skiën", correct: false }]) }
+        ],
+        bosschenhoofd: [
+            { question: "Wat is er bijzonder aan het Pagnevaartbos?", answers: shuffle([{ text: "Het heeft wandelpaden door de natuur", correct: true }, { text: "Het is een groot winkelcentrum", correct: false }]) },
+            { question: "Wat is het Vliegveld Seppe bekend om?", answers: shuffle([{ text: "Het is een vliegschool en toeristische attractie", correct: true }, { text: "Het is een boerderij", correct: false }]) },
+            { question: "Wat voor evenementen worden er in Bosschenhoofd georganiseerd?", answers: shuffle([{ text: "Sportevenementen", correct: true }, { text: "Filmfestivals", correct: false }]) },
+            { question: "Wat voor sportfaciliteiten zijn er in Bosschenhoofd?", answers: shuffle([{ text: "Tennisbanen en sporthal", correct: true }, { text: "Enkel voetbalvelden", correct: false }]) }
+        ],
+        stampersgat: [
+            { question: "Wat is belangrijk in Stampersgat?", answers: shuffle([{ text: "De jaarlijkse carnavalsoptocht", correct: true }, { text: "De waterparken", correct: false }]) },
+            { question: "Wat voor evenementen worden gehouden in Stampersgat?", answers: shuffle([{ text: "Carnavalsoptochten", correct: true }, { text: "Zomermarkten", correct: false }]) },
+            { question: "Wat is een populaire activiteit langs de rivier de Mark?", answers: shuffle([{ text: "Wandelen", correct: true }, { text: "Skiën", correct: false }]) },
+            { question: "Wat voor winkels zijn er in Stampersgat?", answers: shuffle([{ text: "Supermarkten en lokale winkels", correct: true }, { text: "Enkel grote warenhuizen", correct: false }]) }
+        ]
+    };
+
+    function shuffle(array) {
+        return array.sort(() => Math.random() - 0.5);
+    }
+
+    let currentQuiz = {};
+    let currentQuestionIndex = 0;
+    let correctAnswers = 0;
+
+    function startQuiz(village) {
+        currentQuiz = quizzes[village];
+        currentQuestionIndex = 0;
+        correctAnswers = 0;
+        document.getElementById(`quiz-title-${village}`).innerText = `Quiz over ${village.charAt(0).toUpperCase() + village.slice(1)}`;
+        document.getElementById(`quiz-${village}`).style.display = "block";
+        nextQuestion(village);
+    }
+
+    function nextQuestion(village) {
+        if (currentQuestionIndex >= currentQuiz.length) {
+            document.getElementById(`result-${village}`).innerText = `Je hebt ${correctAnswers} van de ${currentQuiz.length} vragen goed!`;
+            return;
+        }
+
+        const questionData = currentQuiz[currentQuestionIndex];
+        document.getElementById(`question-${village}`).innerText = questionData.question;
+
+        const answersDiv = document.getElementById(`answers-${village}`);
+        answersDiv.innerHTML = "";
+
+        questionData.answers.forEach(answer => {
+            const btn = document.createElement("button");
+            btn.innerText = answer.text;
+            btn.className = "answer-button";
+            btn.onclick = () => {
+                if (answer.correct) correctAnswers++;
+                // Disable all buttons after an answer is selected
+                Array.from(answersDiv.children).forEach(button => button.disabled = true);
+                currentQuestionIndex++;
+                nextQuestion(village); // Automatically go to the next question
+            };
+            answersDiv.appendChild(btn);
+        });
+    }
+</script>
+
+</body>
+</html>
